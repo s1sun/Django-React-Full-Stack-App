@@ -1,4 +1,4 @@
-import {useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import api from "../api";
 import Note from "../components/Note";
 import "../styles/Home.css"
@@ -37,7 +37,7 @@ function Home() {
     const createNote = (e) => {
         e.preventDefault()
         api
-            .post("/api/notes/", {content, title})
+            .post("/api/notes/", { content, title })
             .then((res) => {
                 if (res.status === 201) alert("Note created!");
                 else alert("Failed to make note.");
