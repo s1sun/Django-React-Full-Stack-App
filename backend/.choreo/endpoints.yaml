@@ -6,4 +6,3 @@ endpoints:
     type: REST
     networkVisibility: Public
     context: /
-    
