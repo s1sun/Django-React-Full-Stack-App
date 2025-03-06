@@ -6,4 +6,6 @@ endpoints:
         basePath: /
         port: 8000
       type: REST
-      networkVisibility: Public
+      networkVisibility:
+        - Project
+        - Public
